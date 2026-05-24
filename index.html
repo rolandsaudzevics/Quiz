@@ -10,25 +10,31 @@
       max-width: 1400px;
       margin: auto;
       padding: 15px;
-
     }
+    
+    /* Updated base quiz-box with a smooth transition */
     .quiz-box {
       min-height: 250px;
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     }
-   body {
-    font-family: Arial;
-   }
-   .ratta {
-    text-align: center;
-   
-   }
-   .btn:hover {
-  transform: scale(1.05);
-}
     
-
-
+    /* New hover effect for all quiz boxes */
+    .quiz-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    }
     
+    body {
+      font-family: Arial;
+    }
+    
+    .ratta {
+      text-align: center;
+    }
+    
+    .btn:hover {
+      transform: scale(1.05);
+    }
   </style>
 </head>
 <body style="background-image: url('colors2.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
@@ -40,7 +46,6 @@
 <div class="container-quiz mt-4">
   <div class="row">
 
-    <!-- Fråga 1 -->
     <div class="col-12 col-sm-6 col-lg-4 mb-4">
       <div class="quiz-box p-3 bg-primary text-white rounded h-100">
         <p>Vilket år skapades Facebook?</p>
@@ -50,7 +55,6 @@
       </div>
     </div>
 
-    <!-- Fråga 2 -->
     <div class="col-12 col-sm-6 col-lg-4 mb-4">
       <div class="quiz-box p-3 bg-success text-white rounded h-100">
         <p>Vilken plattform är mest känd för korta videoklipp?</p>
@@ -60,7 +64,6 @@
       </div>
     </div>
 
-    <!-- Fråga 3 -->
     <div class="col-12 col-sm-6 col-lg-4 mb-4">
       <div class="quiz-box p-3 bg-warning text-dark rounded h-100">
         <p>Vilken app introducerade Stories först?</p>
@@ -70,7 +73,6 @@
       </div>
     </div>
 
-    <!-- Fråga 4 -->
     <div class="col-12 col-sm-6 col-lg-4 mb-4">
       <div class="quiz-box p-3 bg-info text-white rounded h-100">
         <p>Vilken plattform används mest för professionella nätverk?</p>
@@ -80,7 +82,6 @@
       </div>
     </div>
 
-    <!-- Fråga 5 -->
     <div class="col-12 col-sm-6 col-lg-4 mb-4">
       <div class="quiz-box p-3 bg-secondary text-white rounded h-100">
         <p>Vilken plattform ägs av Microsoft?</p>
@@ -90,7 +91,6 @@
       </div>
     </div>
 
-    <!-- Fråga 6 -->
     <div class="col-12 col-sm-6 col-lg-4 mb-4">
       <div class="quiz-box p-3 bg-dark text-white rounded h-100">
         <p>Vilken plattform är mest känd för live-streaming?</p>
@@ -100,7 +100,6 @@
       </div>
     </div>
 
-    <!-- Fråga 7 -->
     <div class="col-12 col-sm-6 col-lg-4 mb-4">
       <div class="quiz-box p-3 bg-primary text-white rounded h-100">
         <p>Vilken app är mest känd för bilddelning?</p>
@@ -110,7 +109,6 @@
       </div>
     </div>
 
-    <!-- Fråga 8 -->
     <div class="col-12 col-sm-6 col-lg-4 mb-4">
       <div class="quiz-box p-3 bg-success text-white rounded h-100">
         <p>Vilken plattform används mest för snabba meddelanden?</p>
@@ -120,7 +118,6 @@
       </div>
     </div>
 
-    <!-- Fråga 9 -->
     <div class="col-12 col-sm-6 col-lg-4 mb-4">
       <div class="quiz-box p-3 bg-warning text-dark rounded h-100">
         <p>Vilken plattform ägs av Google?</p>
@@ -130,7 +127,6 @@
       </div>
     </div>
 
-    <!-- Fråga 10 -->
     <div class="col-12 col-sm-6 col-lg-4 mb-4">
       <div class="quiz-box p-3 bg-info text-white rounded h-100">
         <p>Vilken plattform fokuserar mest på professionella artiklar och inlägg?</p>
@@ -140,7 +136,6 @@
       </div>
     </div>
 
-    <!-- Fråga 11 -->
     <div class="col-12 col-sm-6 col-lg-4 mb-4">
       <div class="quiz-box p-3 bg-secondary text-white rounded h-100">
         <p>Vilken app är mest känd för professionell videokonferens?</p>
@@ -150,7 +145,6 @@
       </div>
     </div>
 
-    <!-- Fråga 12 -->
     <div class="col-12 col-sm-6 col-lg-4 mb-4">
       <div class="quiz-box p-3 bg-dark text-white rounded h-100">
         <p>Vilken plattform är mest känd för professionella korta utbildningsvideos?</p>
@@ -162,12 +156,11 @@
 
   </div>
 </div>
-¨<div class="ratta">
-<button style="margin-top: -30px; margin-bottom: 20px;" type="button" class="btn btn-primary btn-lg" onclick="ratta()">Rätta Svar</button>
-<button type="reset" class="btn btn-secondary btn-lg" style="margin-top: -30px; margin-bottom: 20px;">
-  Återställ
-</button>
-<script src="QuizJS.js"></script>
+
+<div class="ratta">
+  <button style="margin-top: -30px; margin-bottom: 20px;" type="button" class="btn btn-primary btn-lg" onclick="ratta()">Rätta Svar</button>
+  <button type="reset" class="btn btn-secondary btn-lg" style="margin-top: -30px; margin-bottom: 20px;">Återställ</button>
+  <script src="QuizJS.js"></script>
 </div>
 </form>
 </body>
